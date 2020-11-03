@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="connect to bluetooth"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="56dp"
+            android:src="@drawable/bulb" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_on"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:text="ON"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn_off"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:background="@color/gray"
+                android:layout_height="40dp"
+                android:text="OFF"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/wifi"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_on1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@color/gray"
+                    android:text="ON"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/btn_off1"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:background="@color/gray"
+                    android:layout_height="40dp"
+                    android:text="OFF"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ac"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <Button
+                    android:id="@+id/btn_on2"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:background="@color/gray"
+                    android:text="ON"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/btn_off2"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:background="@color/gray"
+                    android:layout_height="40dp"
+                    android:text="OFF"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/fan"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_on3"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/gray"
+                    android:text="ON"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/btn_off3"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:background="@color/gray"
+                    android:layout_height="40dp"
+                    android:text="OFF"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

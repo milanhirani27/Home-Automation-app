@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Arduino Home Automation"
+        android:textAlignment="center" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+
+
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:text="
+              Code upload time disconnect your bluetooth module (RX,TX)\n
+
+Code:\n
+
+char data = 0;\n                
+void setup()\n 
+{\n
+Serial.begin(9600);  \n      
+pinMode(8, OUTPUT);\n
+pinMode(9, OUTPUT);\n
+pinMode(10, OUTPUT);\n
+pinMode(11, OUTPUT); \n       
+}\n
+void loop() \n
+{\n
+if(Serial.available() > 0)  \n
+{\n
+data = Serial.read();  \n    
+Serial.print(data);  \n      
+Serial.print(\n);  \n      
+
+    if(data == 'a')           \n  
+    digitalWrite(8, HIGH);  \n
+    else if(data == 'b')    \n 
+    digitalWrite(8, LOW); \n
+      if(data == 'c')         \n    
+    digitalWrite(9, HIGH);  \n
+    else if(data == 'd')   \n  
+    digitalWrite(9, LOW);\n
+    if(data == 'e')            \n 
+    digitalWrite(10, HIGH);  \n
+    else if(data == 'f')    \n 
+    digitalWrite(10, LOW);\n
+    if(data == 'g')           \n  
+    digitalWrite(11, HIGH);  \n
+    else if(data == 'h')     \n
+    digitalWrite(11, LOW);\n
+    }                       \n     
+    }"
+        android:textSize="12dp"
+        />
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
